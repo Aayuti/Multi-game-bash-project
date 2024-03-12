@@ -1,0 +1,5 @@
+c : 12 months
+c : Paris
+b : Mars
+b : J.K. Rowling
+a : 8
