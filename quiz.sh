@@ -1,13 +1,4 @@
-# << Documentation
-# Name:Dibyendu Barman
-# Date:29/Sept/2022
-# Description: Write a script command line MCQ Test (Auto Evaluated).
-# Sample Input:
-# Sample Output:
-# Documentation
-
 #!/bin/bash
-
 start_test ()
 {
     header
@@ -88,7 +79,6 @@ header ()
     clear  # after 2 seconds it will clear the display
     echo __________________
     echo
-    echo -e "\e[32m<<<<<<<<<<<<<<<<<\e[0m \e[1;4mOnline MCQ Test\e[0m \e[32m>>>>>>>>>>>>>>>>>\e[0m"
     echo -e "\e[31mTotal Marks\e[0m : 5                    \e[31mTime\e[0m : 50 Seconds"
     echo __________________
 }

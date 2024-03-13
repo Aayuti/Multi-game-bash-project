@@ -49,6 +49,7 @@ init_game(){
     food_count=0        ##food_score
     snek="⋅⋅⋅⋅ "
     snake_color="\e[30;42m"
+    food_color="\033[31m"
     no_color="\e[0m"
     direction_directives=(right right right right right)
     directionX=($start_x $start_x $start_x $start_x $start_x) ## direction of each character of snek
@@ -144,7 +145,7 @@ generate_food(){
     randY=$((RANDOM%(term_cols-2)+2))
     food_count=$((RANDOM%9+1))
     echo -ne "\033[$randX;${randY}H$food_count"
-    draw $randX ${randY} "$snake_color$food_count$no_color"
+    draw $randX ${randY} "$food_color$food_count$no_color"
     flag=0
 }
 

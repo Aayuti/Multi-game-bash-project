@@ -290,9 +290,8 @@ function init(){
     filename="movies"
     
     echo
-    display
-    
     menu
+    
 }
 
 init
